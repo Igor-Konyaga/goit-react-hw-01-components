@@ -28,7 +28,7 @@ export const Profile = ({
           <span className={css.quantity}>{followers}</span>
         </li>
         <li>
-          <span className={css.abel}>Views</span>
+          <span className={css.label}>Views</span>
           <span className={css.quantity}>{views}</span>
         </li>
         <li>
