@@ -1,21 +1,21 @@
+.profile {
+  margin: 50px auto 0;
+  padding: 10px;
 
-.profile{
-margin: 50px auto 0;
-padding: 10px;
-
-width: 300px;
+  width: 300px;
 }
 
-.avatar{
-	display: block;
-	margin: 30px auto 10px;
-	max-width: 100px;
+.avatar {
+  display: block;
+  margin: 30px auto 10px;
+  max-width: 100px;
 }
 
-.stats{
-display: flex;
-gap: 15px;
+.stats {
+  display: flex;
+  gap: 15px;
 
-	list-style: none;
-	background-color: aliceblue;
+  list-style: none;
+  background-color: aliceblue;
+  color: red;
 }
