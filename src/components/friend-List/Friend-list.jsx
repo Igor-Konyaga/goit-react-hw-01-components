@@ -5,9 +5,19 @@ export const FriendList = ({ friends }) => {
     <ul className={css.friendList}>
       {friends.map(friend => {
         return (
-          <li>
-           <div> <img src={friend.avatar} alt={`Friend ${friend.name}`} /></div>
-			  <p>{friend.name}</p>
+          <li key={friend.id} className={css.item}>
+            {friend.isOnline ? (
+              <span className={`${css.status} ${css.online}`}></span>
+            ) : (
+              <span className={`${css.status} ${css.offline}`}></span>
+            )}
+            <img
+              className={css.avatar}
+              src={friend.avatar}
+              alt="User avatar"
+              width="48"
+            />
+            <p className={css.name}>{friend.name}</p>
           </li>
         );
       })}

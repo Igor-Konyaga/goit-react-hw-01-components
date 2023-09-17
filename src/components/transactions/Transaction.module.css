@@ -1,0 +1,51 @@
+.transactionHistory {
+  width: 600px;
+  padding-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  
+
+  background-color: #bfdcea;
+  color: #636363;
+  border-radius: 8px;
+}
+.mainRow{
+	padding: 20px 0;
+	border-bottom: 2px solid #c8c9c459;
+}
+.mainRowBody {
+	display: flex;
+	justify-content: space-around;
+  font-size: 18px;
+}
+
+.mainRowBodyItem{
+	width: 33.333%;
+	text-align: center;
+}
+
+.tableBody{
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.tableRow {
+  display: flex;
+  justify-content: center;
+ 
+
+  border-bottom: 2px solid #c8c9c459;
+}
+
+.tableRowItem{
+	width: 33.333%;
+	padding: 8px;
+	text-align: center;
+
+	
+}
