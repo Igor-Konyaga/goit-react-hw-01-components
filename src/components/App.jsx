@@ -1,9 +1,15 @@
+import css from './App.module.css';
 import userData from '../data/user.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
+import data from '../data/data.json';
 import { Profile } from './profile/Profile';
+import { Statistics } from './statistics/Statistics';
+import {FriendList} from './friend-List/Friend-list'
 
 export const App = () => {
   return (
-    <div>
+    <div className={css.app}>
       <Profile
         username={userData.username}
         tag={userData.tag}
@@ -13,6 +19,10 @@ export const App = () => {
         views={userData.stats.views}
         likes={userData.stats.likes}
       />
+
+      <Statistics title="Upload stats" stats={data} />
+
+		<FriendList friends={friends}/>
     </div>
   );
 };
